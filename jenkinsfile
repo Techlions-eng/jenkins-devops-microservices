@@ -1,14 +1,11 @@
-node{
-    stage('Build'){
+//SCRIPTED
+
+//DECLERATIVE
+pipeline{
+        agent any
         echo "Build"
-    }
-    stage('Test'){
         echo "Test"
-    }
-    stage('Integration Test'){
-        echo "Test"
-    }
-     stage('Unit Test'){
-        echo "Test"
-    }
+        echo "Integration Test"
+        echo "Unit Test"
+    
 }
