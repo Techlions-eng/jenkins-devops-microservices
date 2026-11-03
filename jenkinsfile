@@ -3,9 +3,21 @@
 //DECLERATIVE
 pipeline{
         agent any
-        echo "Build"
-        echo "Test"
-        echo "Integration Test"
-        echo "Unit Test"
-    
+        stages{
+            stage('Build'){
+                steps{
+                    echo "Build"
+                }
+            }
+            stage('Test'){
+                steps{
+                    echo "Test"
+                }
+            }
+            stage('Integration Test'){
+                steps{
+                    echo "Integration Test"
+                }
+            }
+        } 
 }
