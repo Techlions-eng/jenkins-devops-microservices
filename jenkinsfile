@@ -25,19 +25,19 @@ pipeline{
             }
             stage('Compile'){
                 steps{
-                    sh 'mvn clean compile'
+                    sh "mvn clean compile"
                 }
             }
 
             stage('Test'){
                 steps{
-                    sh 'mvn Test'
+                    sh "mvn Test"
                 }
             }
 
             stage('Integration Test'){
                 steps{
-                    sh 'mvn failesafe:integration-test failesafe:verify'
+                    sh "mvn failesafe:integration-test failesafe:verify"
                 }
             }
         } 
